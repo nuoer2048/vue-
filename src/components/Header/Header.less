@@ -1,0 +1,118 @@
+.mg-left{
+    height: auto;
+    width: 15rem;
+}
+.mg-right{
+    height: auto;
+    width: 15rem;
+    margin-left: 50px;
+}
+.down{
+    width: auto;
+    height: auto;
+    background-color: #fff;
+    z-index: 200;
+    padding: 0.625rem;
+    z-index: 8;
+    box-shadow: 0 0 40px 4px rgba(0,0,0,.1);
+    display: flex;
+    justify-content: space-between;
+    color: #000;
+    margin-top: 6px;
+    display: none;
+       
+}
+.down li{
+    position: relative;
+}
+.down-title{
+    font-size: 1.125rem;
+    font-weight: bold;
+    margin-block-start:0em;
+    margin-block-end:0em;
+}
+.down-line{
+    display: inline-block;
+    width: 100%;
+    height: 1px;
+    background-color: #bdbdbd;
+}
+.down-list{
+   list-style-type: disc;
+}
+.down-list li{
+    width: 100%;
+    color: #000
+}
+.mgr-bottom{
+    height: 40px;
+    line-height: 40px;
+    a{
+        color: #000
+    }
+}
+.magzine:hover .down{
+    display: flex;
+}
+.login:hover .down{
+    display: flex;
+
+}
+.cart:hover .down{
+    display: flex;
+
+}
+.down:before{
+    content: '';
+    display: block;
+    height: 0;
+    width: 0;
+    border-top: 5px solid transparent;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-bottom: 5px solid #fff;
+    margin-top: -1.25rem;
+     box-shadow: 0 0 40px 4px rgba(0,0,0,.1);  
+}
+.magzine{
+    position: relative;
+}
+.magdown{
+    position:absolute;
+    top: 15px;
+    right: 0;
+}
+.login{
+    position: relative;
+}
+.cart{
+    position: relative;
+
+}
+.cartdown{
+    position:absolute;
+    top: 15px;
+    left: 0;
+}
+.logindown{
+            position:absolute;
+            top: 15px;
+            right: 0;
+}
+.cartdown{
+    width: 16rem;
+    height: 14rem;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.cartdis{
+    display: none;
+}
+.header-logo{
+     width: 100%;
+    height: 7.5rem;
+    margin: auto;
+    border-bottom: 1px solid #e0e0e0;
+
+}
