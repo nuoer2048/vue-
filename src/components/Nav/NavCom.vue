@@ -163,9 +163,11 @@ export default {
 
 <style lang="less">
 @import url('./NavCom.less');
+
 .nav-down{
    position: absolute;
    left: 0;
+   z-index: 100;
 }
  .navslidwon{
    display: block

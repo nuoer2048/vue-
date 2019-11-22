@@ -1,0 +1,96 @@
+.foot-top{
+    width: 100vw;
+    height:11.25rem ;
+    background: #000;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    .foot-top-item .fa{
+        color: #ffff;
+        font-size: 2.25rem;
+    }
+    .foot-top-item span{
+        display: block;
+        color: #ffff;
+    }
+
+}
+.foot-bottom{
+    width: 80%;
+    margin:auto;
+    background-color: #ffff;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 20px 0;
+    .foot-bottom-kind ul{
+        list-style-type: none;
+        li{
+            height: 2.5rem;
+            line-height: 2.5rem;
+            a{
+                color:#999 ;
+                text-decoration: none;
+            }
+        
+        }
+        li.foot-kind-title{
+            a{
+                color: #000;
+            }
+        }
+        li.foot-kind-sign{
+            a{
+                display: inline-block;
+                margin-right: 3%;
+            }
+        }
+        .wechat-link{
+            position: relative;
+            .wechat{
+                display: none;
+                position: absolute;
+                top: 0;
+                left: 30px;
+                width: 80px;
+                height: 80px;
+                z-index: 100;
+                margin-left:100%;
+                img{
+                    width: 100%;
+                    height: 100%;
+                    background-size: cover;
+                    object-fit: fill;
+                }
+                &::before{
+                    content: "";
+                    display: block;
+                    position: absolute;
+                    top: 22%;
+                    left: -4px;
+                    margin: -6px 0 0;
+                    -webkit-transform: rotate(45deg);
+                    -moz-transform: rotate(45deg);
+                    -ms-transform: rotate(45deg);
+                    -o-transform: rotate(45deg);
+                    transform: rotate(45deg);
+                    border-top: 1px solid #000;
+                    border-left: 1px solid #000;
+                    height: 12px;
+                    width: 12px;
+                    border-bottom: 0 solid #000;
+                    background: #000;
+                    z-index: -1;
+
+                }
+             
+            }
+        }
+        .wechat-link:hover .wechat{
+            display: block;
+        }
+       
+    }
+   
+
+}

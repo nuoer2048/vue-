@@ -29,22 +29,20 @@ export default {
     computed:{
     },
     mounted:function(){
-      this.$nextTick(function(){
-          this.changeTrans();
-      })
+    
     },
     methods:{
-        changeTrans:function(){
-            let i=0,_this=this;
-            // let _this = this;
-           setInterval(function(){
-               i++;
-               let str = `transform:translate3d(0,${_this.transArr[i%3]}px,0)`;
-            window.console.log(str);
-              _this.$refs.topwrap.style= str;
+        // changeTrans:function(){
+        //     let i=0,_this=this;
+        //     // let _this = this;
+        //    setInterval(function(){
+        //        i++;
+        //        let str = `transform:translate3d(0,${_this.transArr[i%3]}px,0)`;
+        //     window.console.log(str);
+        //       _this.$refs.topwrap.style= str;
 
-           },2000)
-        },
+        //    },2000)
+        // },
     },
    
 

@@ -1,36 +1,47 @@
 <template>
   <div id="app">
-    <img src="./assets/logo.png">
-    <div>
-      <p>
-        If Element is successfully added to this project, you'll see an
-        <code v-text="'<el-button>'"></code>
-        below
-      </p>
-      <el-button>el-button</el-button>
-    </div>
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <TopHeader />
+    <Header />
+    <NavCom />
+    <router-view></router-view>
+    <FootComponent/>
+    
   </div>
+
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-
+import TopHeader from "./components/TopHeader.vue";
+import Header from "./components/Header/Header.vue";
+import NavCom from "./components/Nav/NavCom.vue";
+import FootComponent from './components/FootComponent/FootComponent.vue';
 export default {
-  name: 'app',
+  name: "app",
   components: {
-    HelloWorld
+    TopHeader,
+    Header,
+    NavCom,
+    FootComponent
   }
-}
+};
 </script>
 
 <style>
+a{
+  color: #000;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 500;
+    line-height: 1.2;
+    color: inherit;
+}
 #app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+  min-width: 100vw;
+  min-height: 100vh;
+}
+ul {
+  margin-block-start: 0em;
+  margin-block-end: 0em;
+  padding-inline-start: 0em;
 }
 </style>

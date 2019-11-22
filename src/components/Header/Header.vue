@@ -2,7 +2,7 @@
   <header class="app-header">
      <div class="header-top">
          <div class="h-top-left"><ul>
-             <li><a href="#">专柜查询</a></li>
+             <li><router-link to="/tospecial"><i class="fa fa-location-arrow"></i>专柜查询</router-link></li>
              <li class="top-customer"> <a href="javascript:void(0);">客户中心</a>
                  <div class="tlf-slidedown down">
                     <div class="sd-left">
@@ -156,6 +156,9 @@ computed:{
            width: 100%;
            display: flex;
            justify-content: space-between;
+           .top-customer{
+               position: relative;
+           }
            .top-customer:hover .tlf-slidedown{
                display: flex;
            }
@@ -180,6 +183,9 @@ computed:{
                text-decoration: none;
            }
            .h-top-left .tlf-slidedown{
+               position: absolute;
+               top: 15px;
+               left: 0;
            
                .sd-left{
                 width: 20.625rem;

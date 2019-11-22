@@ -1,0 +1,99 @@
+.app-specialcount{
+    width: 70%;
+    margin: auto;
+    .sc-body{
+        width: 100%;
+        padding: 30px 0;
+        h2, h4{
+         font-weight: 500;
+        }
+       
+        .sc-search{
+            width: 100%;
+            height: 18.75rem;
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+            grid-template-rows: 100%;
+            gap: 0 5%;
+            .sc-search-left{
+               .left-pro-search,.left-pro-street-search{
+                   width: 100%;
+                   height: 30%;
+                   margin-top: 5%;
+               }
+               .street-search-area{
+                width: 100%;
+                height: 80%;
+                   display: grid;
+                   grid-template-columns: 3.2fr .8fr;
+                   grid-template-rows: 100%;
+                   gap: 0 4%;
+                   .street-input{
+                      input{
+                          width: 100%;
+                          height: 100%;
+                      }
+                   }
+               }
+               .pro-search-area{
+                   width: 100%;
+                   height: 80%;
+                   display: grid;
+                   grid-template-columns: 1fr 1fr 1fr .8fr;
+                   grid-template-rows: 100%;
+                   gap: 0 4%;
+               }
+            }
+            .sc-search-right{
+              .sc-location{
+                width: 100%;
+                height: 80%;
+                display: grid;
+                grid-template-columns: repeat(2,1fr);
+                grid-template-rows: 100%;
+                gap: 0 4%;
+              }
+              .sc-location-img{
+                  .img-view{
+                     width: 100%;
+                     height: 100%;
+                  }
+              }
+            }
+
+            .sc-title{
+                width: 100%;
+                height: 2rem;
+                line-height: 2rem;
+                border-bottom: solid 1px #000;
+            }
+            .search-btn{
+                background-color: #000;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                color: #fff;
+            }
+            .search-item{
+                width: 100%;
+                height: 100%;
+            }
+
+        }
+    }
+    .search-map{
+        width: 100%;
+        height:37.5rem ;
+        padding-bottom: 2rem;
+        display: grid;
+        grid-template-columns: 3fr 7fr;
+        grid-template-rows: 100%;
+        gap: 0 3%;
+        .search-map-pic{
+           .bm-view{
+               width: 100%;
+               height: 100%;
+           }
+        }
+    }
+}
