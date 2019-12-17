@@ -11,12 +11,12 @@
                </div>
             </div>
               </li>
-           <li><a href="#">护肤</a></li>
-           <li><a href="#">香水</a></li>
-           <li><a href="#">双十一攻略</a></li>
-           <li><a href="#">尊享礼盒</a></li>
-           <li><a href="#">会员中心</a></li>
-           <li><a href="#">私人定制服务</a></li>
+           <li><router-link to="/to/skin">护肤</router-link></li>
+           <li><router-link to="/to/perform">香水</router-link></li>
+           <li><router-link to="/to/chris">圣诞攻略</router-link></li>
+           <li><router-link to="/to/present">尊享礼盒</router-link></li>
+           <li><router-link to="/customer">会员中心</router-link></li>
+           <li><router-link to="/service">私人定制服务</router-link></li>
         </ul>
      </div>
      <div class="nav-input">
